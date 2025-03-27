@@ -1,0 +1,117 @@
+body{
+    background-color: black;
+}
+.chatWindow{
+    margin-top: 0px;
+    height: 460px;
+    width: 800px;
+    border: 2px solid white;
+    margin-left: 180px;
+    overflow-y: auto;
+    border-radius: 10px;
+}
+
+.wholebox{
+    position: relative;
+    height: 50px;
+    width: 500px;
+    background-color:white;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 340px;
+}
+
+.sendbutton {
+    position: relative; 
+    height: 30px;
+    width: 30px;
+    margin-left: 460px;
+    background: transparent; 
+    border: none; 
+    padding: 0;
+    top: 10px;
+}
+
+.sendbuttonlogo {
+    position: absolute; 
+    height: 30px;
+    width: 30px;
+    top: 0;
+    left: 0;
+}
+
+#inputbox{
+    position: absolute;
+    left:40px;
+    top: 10px;
+    height: 25px;
+    width: 400px;
+}
+.aiIcon{
+    position: absolute;
+    height: 30px;
+    top: 10px;
+    left: 5px;
+    background: transparent;
+    border-radius: 20px;
+}
+.aiImage{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 250px;
+    background: transparent;
+    height: 450px;
+}
+
+.message {
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+    width: fit-content;
+}
+
+.user-message {
+    background-color: #b3e0ff;
+    align-self: flex-end;
+    margin-left: auto;
+    max-width: 40vw;
+}
+
+.ai-message {
+    background-color: #f2f2f2;
+    align-self: flex-start;
+    margin-right: auto;
+    max-width: 40vw;
+}
+.resetChat{
+    position: absolute;
+    top: 0px; /* Adjust to align with the input box */
+    left: 500px; /* Position it parallel to the input box */
+    height: 50px;
+    width: 50px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+
+
+}
+.resetChatlogo{
+    width: 100%;
+    height: 100%;
+
+}
+
+@keyframes rotate360 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+.rotate {
+    animation: rotate360 0.3s linear; /* Smooth rotation in 0.5 seconds */
+}
